@@ -1,0 +1,31 @@
+  <!doctype html>
+    <title>Stock price lookup by ticker symbol</title>   
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+    
+    <div class=page>
+      <h1>Historical Stock Price Lookup</h1>
+      <div class=metanav>
+        
+<!--         <h4>                                                                                    
+          Ticker symbol:                                         
+        </h4> -->
+        
+        <form id='userinfoform' method='post' action='output' >
+          <p>
+    Ticker: <input type='text' name='ticker' />
+          </p>
+    <p>
+      Opening price <input type='checkbox' name='features' value='open' />
+        </p>
+        Highest price <input type='checkbox' name='features' value='high' />
+        </p>
+        Closing price <input type='checkbox' name='features' value='close' />
+        </p>  
+          <p>
+      <input type='submit' value='Submit' />
+          </p>
+        </form>
+        
+      </div>
+    </div>
+    </html>
